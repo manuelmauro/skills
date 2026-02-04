@@ -11,8 +11,10 @@ Use conventional commit format with gitmoji for all commits in this project.
 ## Format
 
 ```
-<type>: <emoji> <description>
+<type>(<scope>): <emoji> <description>
 ```
+
+The emoji comes AFTER the colon, not before the type. Use shortcodes (e.g., `:sparkles:`) which GitHub renders as emojis.
 
 ## Commit Types and Emojis
 
@@ -61,8 +63,17 @@ git commit -m "feat: :sparkles: add user authentication"
 git commit -m "fix: :bug: resolve login redirect loop"
 git commit -m "docs: :memo: update API documentation"
 git commit -m "refactor: :recycle: extract validation logic"
-git commit -m "chore: :arrow_up: release v1.0.0"
+git commit -m "chore: :wrench: update dependencies"
 git commit -m "ci: :construction_worker: add GitHub Actions workflow"
+```
+
+## With Scope
+
+Add scope in parentheses for more context:
+
+```bash
+git commit -m "feat(auth): :sparkles: add OAuth2 support"
+git commit -m "fix(api): :bug: handle null response"
 ```
 
 ## Breaking Changes
@@ -71,13 +82,4 @@ For breaking changes, add `!` after the type:
 
 ```bash
 git commit -m "feat!: :boom: redesign authentication API"
-```
-
-## Scope (Optional)
-
-Add scope in parentheses for more context:
-
-```bash
-git commit -m "feat(auth): :sparkles: add OAuth2 support"
-git commit -m "fix(api): :bug: handle null response"
 ```
