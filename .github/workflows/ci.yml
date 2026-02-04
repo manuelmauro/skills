@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate Skills
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Skilo
+        run: curl -sSfL https://raw.githubusercontent.com/manuelmauro/skilo/main/install.sh | sh
+
+      - name: Validate skills
+        run: skilo check --strict skills/
