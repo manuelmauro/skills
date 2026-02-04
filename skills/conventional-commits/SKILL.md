@@ -1,6 +1,6 @@
 ---
 name: conventional-commits
-description: Formats git commit messages using Conventional Commits standard with gitmoji emojis. Use when writing commits, creating commit messages, or when the user asks about commit conventions, commit formatting, or gitmoji usage.
+description: ALWAYS use when creating git commits. Formats commit messages using Conventional Commits standard with gitmoji emojis.
 license: MIT OR Apache-2.0
 ---
 
