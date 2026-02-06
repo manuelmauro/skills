@@ -1,6 +1,6 @@
 ---
 name: distill
-description: Translate ambiguous natural language specifications into a formal Intermediate Verification Language (IVL). Use when users provide English specs, requirements, or descriptions of desired behavior and need unambiguous, verifiable specifications. Triggers include phrases like "specify this", "formalize this", "make this unambiguous", "write a spec for", or when reviewing English specs like SPEC.md files for ambiguities.
+description: Translate ambiguous natural language specifications into a formal Intermediate Verification Language (IVL). Use when users provide English specs, requirements, or descriptions of desired behavior and need unambiguous, verifiable specifications. Triggers include phrases like "specify this", "formalize this", "make this unambiguous", "write a spec for", "write specs", "formal specs", "formal specification", "specify this project", "specify this codebase", or when reviewing English specs like SPEC.md files for ambiguities. Also use when asked to create formal specifications for an existing codebase by first exploring it to understand its behavior, then formalizing that behavior into IVL.
 ---
 
 # Distill
